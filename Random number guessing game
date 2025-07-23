@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+int main() {
+    int guess, number, attempts = 5;
+    srand(time(0));
+    number = rand() % 100 + 1;
+    printf("Guess the number between 1 and 100 (You have 5 attempts):\n");
+    for (int i = 1; i <= 5; i++) {
+        printf("Attempt %d: ", i);
+        scanf("%d", &guess);
+        if (guess == number) {
+            printf("Congratulations! You guessed it right.\n");
+            return 0;
+        } else if (guess < number) {
+            printf("Too low!\n");
+        } else {
+            printf("Too high!\n");
+        }
+    }
+    printf("Sorry! You’ve used all attempts. The number was %d.\n", number);
+    return 0;
+}
