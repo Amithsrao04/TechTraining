@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+printf("#28 Govardhan");
+printf("2nd main, 2nd cross, MET layout");
+printf("Sanjaynagar");
+printf("Bangalore-560094");
+return0;
+}
