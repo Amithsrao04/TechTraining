@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+    char phone[20];
+    printf("Enter your phone number: ");
+    scanf("%s", phone);
+    if (strlen(phone) != 10) {
+        printf("Error: Phone number must be exactly 10 digits.\n");
+    } else {
+        printf("Phone number is: %s\n", phone);
+    }
+    return 0;
+}
