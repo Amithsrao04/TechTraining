@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+enum week
+{
+mon,tye,wed,thu,fri,sat
+}a;
+a=thu;
+printf("%d",a);
+return 0;
+}
