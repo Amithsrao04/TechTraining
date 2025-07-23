@@ -1,0 +1,8 @@
+#include<stdio.h>
+int main()
+{
+int l=5,b=5, a;
+a=l*b;
+printf("%d",a);
+return 0;
+}
