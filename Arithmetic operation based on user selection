@@ -1,0 +1,41 @@
+#include<stdio.h>
+int main()
+{
+int a,b,n;
+float c;
+printf("Choose any one of the options");
+printf("\n1. Addition\n 2. Subtraction\n 3. Multiplication\n 4. Division");
+printf("\nEnter your number");
+scanf("%d",&n);
+switch(n)
+{
+case 1:
+printf("\nEnter the numbers");
+scanf("%d%d,&a,&b);
+c= a+b;
+printf("Added value = %f",c);
+break;
+case 2:
+printf("\nEnter the numbers");
+scanf("%d%d,&a,&b);
+c= a-b;
+printf("Subtracted value = %f",c);
+break;
+case 3:
+printf("\nEnter the numbers");
+scanf("%d%d,&a,&b);
+c= a*b;
+printf("Multiplied value = %f",c);
+break;
+case 4:
+printf("\nEnter the numbers");
+scanf("%d%d,&a,&b);
+c= a/b;
+printf("Divided value = %f",c);
+break;
+default:
+printf("\nInvalid Number");
+break;
+}
+return 0;
+}
