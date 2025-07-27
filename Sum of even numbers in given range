@@ -1,0 +1,12 @@
+#include<stdio.h> 
+int main()
+{
+int a,b,sum=0,i;
+scanf("%d%D",&a,&b);
+for(i=a;i<=b;i++)
+{
+sum=sum+1;
+}
+printf("%d",sum);
+return 0;
+}
