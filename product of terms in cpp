@@ -1,0 +1,18 @@
+#include<iostream>
+using namespace std;
+int prod(int n)
+int r,m=1;
+for(int i=0; i<n; i++)
+{
+r=n%10;
+m=m*r;
+n=n/10;
+}
+int main()
+int a,result;
+cout<<"Enter the value of a";
+cin>>a;
+result = prod(a);
+cout<<"The product of the digits is = "<<result;
+return 0;
+}
