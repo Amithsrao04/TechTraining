@@ -1,0 +1,9 @@
+#include<stdio.h>
+int main()
+{
+int in;
+printf("Enter the input value");
+scanf("%d",in);
+(in>0)? (printf("Output is positive")) : (printf("Output is negative"));
+return 0;
+}
