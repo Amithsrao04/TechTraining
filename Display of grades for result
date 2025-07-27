@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+int p,c,m,total;
+float avg;
+printf("Enter the marks of p,c and m");
+scanf("%d%d%d",&p,&c,&m);
+total = p+c+m;
+avg = total/3;
+printf("Total = %d",total);
+printf("\nAvg = %f", avg);
+if(avg>=90)
+printf("Grade = A+");
+else if (80>=avg<90)
+printf("Grade = A");
+else if (70>=avg<80)
+printf("Grade = B+");
+else if (60>=avg<70)
+printf("Grade = B");
+else if (50>=avg<60)
+printf("Grade = C");
+else if (40>=avg<50)
+printf("Grade = D");
+else if (35>=avg<40)
+printf("Grade = E");
+else
+printf("Grade = Fail");
+return 0;
+}
