@@ -1,0 +1,36 @@
+#include<stdio.h>
+int main()
+{
+int n,a,b;
+float c;
+printf("Choose any one option from below");
+printf("\n1. Area of Square \n 2. Area of Rectangle \n 3. Area of Circle\n 4. Area of Triangle");
+printf("\nEnter your choice");
+scanf("%d",&n);
+switch(n) 
+{
+case 1:
+printf("\n Enter the value");
+scanf("%d",&a);
+c=a*a;
+break;
+case 2:
+printf("\n Enter the values");
+scanf("%d%d",&a,&b);
+c=a*b;
+break;
+case 3:
+printf("\n Enter the value");
+scanf("%d",&a);
+c=3.14*a*a;
+break;
+case 4:
+printf("\n Enter the values");
+scanf("%d%d",&a,&b);
+c=(0.5)*a*b;
+break;
+default:
+printf("\n Invalid Number");
+break;
+return 0;
+}
