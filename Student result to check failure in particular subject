@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main()
+{
+int m,p,c,total;
+float avg;
+scanf("%d%d%d",&m,&p,&c);
+if(m>35)
+{
+if(p>35)
+{
+if(c>35)
+{
+total = m+p+c;
+avg = total/3;
+printf("Total marks  = %d",total);
+printf("\nAvg marks = %f", avg);
+printf("\nStudent has passed");
+}
+else
+{
+printf(" Failed in Chemistry");
+}
+else
+{
+printf(" Failed in Physics");
+}
+else
+{
+printf(" Failed in Mathematics");
+return 0;
+}
