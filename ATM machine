@@ -1,0 +1,52 @@
+#include<stdio.h> 
+int main()
+{
+int n,a,ub,rb,p1,p2;
+printf("Choose any one of the operations");
+printf("\n1. Deposit\n 2. Withdraw\n 3. Balance Enquiry\n 4. Pin Change");
+printf("\nEnter your choice");
+scanf("%d",&n);
+switch(n)
+{
+case 1:
+printf("\n Enter the amount to be deposited");
+scanf("%d",&a);
+ub=a+1000;
+printf("\n Updated balance = %d",ub);
+break;
+case 2:
+printf("\n Enter the amount to be withdrawn");
+scanf("%d",&a);
+if(a<=1000)
+{
+rb=1000-a;
+printf("\n Remaining balance = %d",rb);
+else
+printf("There is not enough balance in the account");
+break;
+case 3:
+printf("\n Enter the pin number");
+scanf("%d",&p1);
+if(p1==1234)
+printf("Balance in account is 1000 rupees");
+else
+printf("Incorrect pin");
+break;
+case 4:
+printf("\n Enter your pin number");
+scanf("%d",&p1);
+if(p1==1234)
+{
+printf("\n Enter your new pin number);
+scanf("%d",&p2);
+printf("Pin number updated"); 
+}
+else
+printf("Wrong Pin Number");
+break;
+default:
+printf("\n Invalid");
+break;
+}
+return 0;
+}
