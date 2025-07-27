@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+char A;
+printf("Enter the character ");
+scanf("%c",&a);
+if(A=='a' || A=='e' || A=='i' || A=='o' || A=='u')
+{
+printf("It is a vowel");
+}
+else
+{
+printf("It is not a vowel");
+}
+return 0;
+}
