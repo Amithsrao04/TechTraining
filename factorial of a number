@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+long long factorial(int n)
+{
+long long f = 1;
+for (int i = 2; i <= n; i++)
+f = f \* i;
+return f;
+}
+int CountTrailingZeros(int x)
+{
+long long fact = factorial(x);
+int count = 0;
+while (fact % 10 == 0)    
+{
+count++;
+fact = fact / 10;
+}
+return count;
+}
+int main()
+{
+int a, result;
+cout << "Enter the number" << endl;
+cin >> a;
+result = CountTrailingZeros(a);
+cout << "The no. of trailing zeros is = " << result;
+return 0;
+}
