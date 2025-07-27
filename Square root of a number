@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+float n,sr;
+printf("Enter the value of n");
+canf("%f",&n);
+sr=sqrt(n);
+printf("\nThe square root value of %f is = %f",n,sr);
+return 0;
+}
