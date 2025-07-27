@@ -1,0 +1,11 @@
+#include<stdio.h>
+#include<math.h>
+int main()
+{
+int x,y,ex;
+printf("Enter the value for x and y");
+scanf("%d%d",&x,&y);
+ex= (log(x)+ log10(x) + exp(x))/sqrt(y);
+printf("The value of the expression is %d= ", ex);
+return 0;
+}
