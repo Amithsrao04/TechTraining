@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string.h>
+#include <ctype.h>
+using namespace std;
+int main() 
+{
+char s[100],i;
+cout << "Enter the sentence: ";
+cin.getline(s, 100);  
+if (isalpha(s[0])) 
+{
+s[0] = toupper(s[0]);
+}
+for(i = 1; s[i] != '\0'; i++) 
+{
+if(isspace(s[i]) && isalpha(s[i+1])) 
+{
+s[i+1] = toupper(s[i+1]);
+}
+}
+cout << "Modified sentence: " <<s<<endl;
+return 0;
+}
