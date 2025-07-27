@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main()
+{
+int p,c,m,total;
+float avg;
+scanf("%d%d%d",&m,&p,&c);
+if(m>35 && p>35 && c>35)
+{
+total = m+p+c;
+avg = total/3;
+printf("Total marks  = %d",total);
+printf("\nAvg marks = %f", avg);
+printf("\nStudent has passed");
+}
+else
+printf("\nStudent has failed");
+}
+return 0;
+}
