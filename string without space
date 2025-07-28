@@ -1,15 +1,19 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
-int main()
+int main() 
 {
 char s[100];
-cout<<"Enter the sentence: ";
-cin.getline(s,100);
-for(i=0;s[i]!='\0';i++)
+cout << "Enter the sentence: ";
+cin.getline(s, 100);
+int j = 0;
+for (int i = 0; s[i] != '\0'; i++) 
 {
-if(isspace(s[i))
-s[i]=s[i+1];
+if (!isspace(s[i])) 
+{
+s[j++] = s[i]; 
 }
-cout<<"The string is "<<s<<endl;
+}
+s[j] = '\0'; 
+cout << "The string without spaces is: " << s << endl;
 return 0;
 }
